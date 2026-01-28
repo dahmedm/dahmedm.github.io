@@ -3,35 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dawood Ahmed Mughal - Agricultural Robotics Researcher</title>
+    <title>Dawood Ahmed - Agricultural Robotics Researcher</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
             line-height: 1.6;
             color: #333;
         }
-        h1 { color: #2c3e50; }
-        a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .section { margin: 30px 0; }
+        
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: #34495e;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        
+        nav li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        section {
+            margin-bottom: 60px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info p {
+            margin: 5px 0;
+        }
+        
+        .education-item, .experience-item, .project-item {
+            margin-bottom: 25px;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .institution {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .publications ol {
+            margin-left: 20px;
+        }
+        
+        .publications li {
+            margin-bottom: 15px;
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .skill-category h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .awards li {
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            nav li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Dawood Ahmed Mughal</h1>
-    <p>PhD Student, Agricultural Robotics</p>
-    <p>Cornell University | AgRobotics Lab</p>
+    <header>
+        <h1>Dawood Ahmed</h1>
+        <p>PhD Student in Agricultural Robotics</p>
+        <p>Cornell University | AgRobotics Lab</p>
+    </header>
     
-    <div class="section">
-        <h2>Research</h2>
-        <p>Developing autonomous ground robots for fruit orchard environments.</p>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a PhD student in Biological and Environmental Engineering at Cornell University, working under the supervision of Prof. Manoj Karkee in the AgRobotics Lab. My research focuses on developing autonomous ground robots for fruit orchard environments, with emphasis on navigation systems, computer vision, and automated pruning operations.</p>
+            
+            <p>I have published multiple peer-reviewed papers in leading agricultural engineering journals and have presented my work at international conferences. My expertise spans machine learning, computer vision, robotics, and precision agriculture.</p>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            
+            <div class="education-item">
+                <h3><span class="institution">Cornell University</span>, Ithaca, NY</h3>
+                <p><strong>Ph.D. in Biological and Environmental Engineering</strong> <span class="date">(Jan 2025 - Present)</span></p>
+                <p>Advisor: Prof. Manoj Karkee</p>
+            </div>
+            
+            <div class="education-item">
+                <h3><span class="institution">Washington State University</span>, Pullman, WA</h3>
+                <p><strong>Ph.D. in Biosystems Engineering</strong> <span class="date">(Jan 2022 - Dec 2024)</span></p>
+                <p>GPA: 4.0 | Advisor: Prof. Manoj Karkee | Transferred to Cornell</p>
+            </div>
+            
+            <div class="education-item">
+                <h3><span class="institution">National University of Sciences and Technology</span>, Islamabad, Pakistan</h3>
+                <p><strong>B.E. in Mechatronics Engineering</strong> <span class="date">(Oct 2015 - Aug 2019)</span></p>
+                <p>GPA: 3.32</p>
+            </div>
+        </section>
+        
+        <section id="research">
+            <h2>Research Experience</h2>
+            
+            <div class="experience-item">
+                <h3><span class="institution">Graduate Research Assistant</span> - Cornell University</h3>
+                <p class="date">Jan 2025 - Present</p>
+                <ul>
+                    <li>Developing an integrated robotic pruning system for commercial tall spindle apple orchards</li>
+                    <li>Working on computer vision, decision-making algorithms, and precision manipulation control</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h3><span class="institution">Graduate Research Assistant</span> - Washington State University</h3>
+                <p class="date">Jan 2022 - Dec 2024</p>
+                <ul>
+                    <li>Developed machine vision algorithms for crop-load estimation and bud detection using YOLOv8</li>
+                    <li>Created semantic skeletonization framework for tree modeling and pruning point identification</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h3><span class="institution">Research Intern</span> - USDA-ARS SCINet, Frederick, MD</h3>
+                <p class="date">June 2023 - Aug 2023</p>
+                <ul>
+                    <li>Worked with Dr. Michael Fulcher on predicting bacterial pathogenicity using machine learning</li>
+                    <li>Used Graph Convolutional Neural Networks to predict pathogenicity of Xanthomonas and Pseudomonas bacteria with 86% accuracy</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="publications" class="publications">
+            <h2>Selected Publications</h2>
+            <ol>
+                <li><strong>Ahmed, D.</strong>, Sapkota, R., Churuvija, M., & Karkee, M. (2025). Estimating optimal crop-load for individual branches in apple tree canopies using YOLOv8. <em>Computers and Electronics in Agriculture</em>, 229, 109697.</li>
+                
+                <li><strong>Ahmed, D.</strong>, Imran, B. M., Churuvija, M., & Karkee, M. (2025). An Integrated Visual Servoing Framework for Precise Robotic Pruning Operations in Modern Commercial Orchard. <em>arXiv preprint arXiv:2504.07309</em>.</li>
+                
+                <li>Churuvija, M., Sapkota, R., <strong>Ahmed, D.</strong>, & Karkee, M. (2025). A pose-versatile imaging system for comprehensive 3D modeling of planar-canopy fruit trees for automated orchard operations. <em>Computers and Electronics in Agriculture</em>, 230, 109899.</li>
+                
+                <li>Sapkota, R., <strong>Ahmed, D.</strong>, Churuvija, M., & Karkee, M. (2024). Immature green apple detection and sizing in commercial orchards using YOLOv8 and shape fitting techniques. <em>IEEE Access</em>, 12, 43436-43452.</li>
+            </ol>
+            <p><em>Full publication list available in CV</em></p>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <div class="project-item">
+                <h3>Integrated Robotic Pruning System</h3>
+                <p class="date">Jan 2022 - Present | Cornell University</p>
+                <ul>
+                    <li>Developing comprehensive system for automated pruning in commercial apple orchards</li>
+                    <li>Created machine vision pipeline for bud detection and crop load assessment</li>
+                    <li>Implemented semantic skeletonization framework for tree structure analysis</li>
+                    <li>Designed visual servoing control system for precise robotic manipulation</li>
+                </ul>
+            </div>
+            
+            <div class="project-item">
+                <h3>Bin Handling Robot</h3>
+                <p class="date">2024 | Washington State University</p>
+                <ul>
+                    <li>Led team to develop autonomous robot for agricultural bin handling</li>
+                    <li>Developed autonomous navigation system and bin alignment approach for precise positioning</li>
+                    <li>Developed and integrated picking assembly to pick and drop bins at designated locations</li>
+                    <li><strong>Won Small Farm Tech Award</strong> in Farm Robotics Challenge organized by UC Agriculture and Natural Resources</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <p>Python, C/C++, MATLAB, LaTeX</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Machine Learning & Computer Vision</h4>
+                    <p>PyTorch, OpenCV, YOLOv8, Deep Learning</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Robotics</h4>
+                    <p>ROS, Isaac Sim, Visual Servoing, Autonomous Navigation</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="awards" class="awards">
+            <h2>Awards & Honors</h2>
+            <ul>
+                <li><strong>Small Farm Tech Award</strong> - Farm Robotics Challenge (2024)</li>
+                <li><strong>HUGS 2024 Oral Presentation Award</strong> - Second place, Heritage University (2024)</li>
+                <li><strong>ASABE AIM 2023 Best Presentation Award</strong> - American Society of Agricultural and Biological Engineers (2023)</li>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> da542@cornell.edu</p>
+                <p><strong>Phone:</strong> (+1) 509-778-8109</p>
+                <p><strong>Location:</strong> Department of Biological and Environmental Engineering, Cornell University, Ithaca, NY</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/dahmedm">github.com/dahmedm</a></p>
+            </div>
+        </section>
     </div>
     
-    <div class="section">
-        <h2>Contact</h2>
-        <p><a href="https://github.com/dahmedm">GitHub</a></p>
-    </div>
+    <footer>
+        <p>&copy; 2025 Dawood Ahmed. All rights reserved.</p>
+    </footer>
 </body>
 </html>
